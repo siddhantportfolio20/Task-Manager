@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-div">
+        <div id="task-manager">
+
+            <h1>Task Manager</h1>
+            <br>
+            <div id="add-task">
+                <input type="text" name="addTask" class="inputTask" placeholder="Add Task">
+                <button id="addBtn">➕Add</button>
+            </div>
+            <br>
+            <div id="edit-task">
+                
+            </div>
+            <button id="editBtn">📝 Edit</button>
+            <br>
+        
+            <button id="deleteBtn">🗑️ Delete All</button>
+        
+            <select name="filter" id="filter">
+                <option class="all" value="All">All</option>
+                <option class="active" value="Active">⚡Active</option>
+                <option class="completed" value="Completed">✅Completed</option>
+                <option class="incomplete" value="Incompleted">📌Incomplete</option>
+            </select>
+
+        </div>
+        <div id="task-info">
+            <h1>Task info</h1>
+            Completed:✅
+            Active:⚡ 
+            Incomplete:📌
+            <div id="task-display">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
